@@ -1,11 +1,6 @@
 require "rack"
 require "thin"
 
-	# class HelloWorld
-	# def call(env)
-	#	[200, { "Content-Type" => "text/plain" }, env]
-	# end
-
 	app =  ->(env) do
 		sleep 3
 		[200, { "Content-Type" => "text/plain" }, ["Hello World!\n"]]
